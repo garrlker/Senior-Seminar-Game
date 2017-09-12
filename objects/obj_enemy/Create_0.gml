@@ -1,0 +1,11 @@
+htime=0
+vtime=0
+free=true
+hsp=0
+vsp=0
+trin=999
+trinfree=true
+freemd=true
+spr_dir=1
+ai_walk=0
+ai_jump=false
