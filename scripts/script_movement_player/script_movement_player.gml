@@ -1,25 +1,26 @@
 /// script_movement_player(Right Control, Jump Control, Left Control)
 
-if argument0 {
+if keyboard_check(argument0) {
 	spr_dir=1
-	if(hsp < 2){
-		hsp+=0.2
+	if(hsp < 3){
+		hsp+=0.3
 	}
 }
 
-if argument2 {
+if keyboard_check(argument2) {
 	spr_dir=-1
-	if(hsp > -2){
-		hsp-=0.2
+	if(hsp > -3){
+		hsp-=0.3
 	}
 }
 
-if argument1 {
+if keyboard_check(argument1) {
 	if(free=false){
+		alarm[0] = 15;
 		vsp=-6
 	}
 	//Walljump
-	if(freemd=0 and trinfree=0 and trin=999 and free=1){
+	if(can_wall_jump=true and freemd=0 and colliding_with_wall and trin=999 and free=1){
 		if(spr_dir=1){
 			hsp=-3
 			vsp=-6
@@ -113,13 +114,13 @@ repeat(floor(hrep)) {
 //The vspeed movement (Uses repeat function)
 repeat(floor(vrep)) {
 	if (!place_meeting(x,y+sign(vsp),par_block) and !place_meeting(x,y+sign(vsp),par_unit)){
-		col_jumpthrough = collision_line(x+1,y+16,x+15,y+16,par_jumpthrough,0,1)
+		col_jumpthrough = collision_line(x-8,y+8,x+8,y+8,par_jumpthrough,0,1)
 
 		if col_jumpthrough > 0 and vsp >= 0{
 			cjy=col_jumpthrough.y
 			
-			if y < cjy-15+vsp {
-				y = cjy - 16
+			if y < cjy-8+vsp {
+				y = cjy - 8
 				vsp=0
 			}else{y+=sign(vsp)}}else{y+=sign(vsp)}
 
@@ -128,14 +129,14 @@ repeat(floor(vrep)) {
 
 //This last part simply checks if there is ground under the player.
 if place_meeting(x,y+1,par_block) or place_meeting(x,y+1,par_unit){
-	free=false;freemd=true
+	free=false;freemd=true;can_wall_jump=false;
 }else{
 	freemd=false
-	col_jumpthrough = collision_line(x+1,y+16,x+15,y+16,par_jumpthrough,0,1)
+	col_jumpthrough = collision_line(x-8,y+8,x+8,y+8,par_jumpthrough,0,1)
 	if col_jumpthrough > 0 and vsp >= 0{
 		cjy=col_jumpthrough.y
-		if y < cjy-15+vsp {
-			y = cjy - 16
+		if y < cjy-8+vsp {
+			y = cjy - 9
 			free=false
 		
 			if !place_meeting(x,y+sign(col_jumpthrough.vsp),par_block) and !place_meeting(x,y+sign(col_jumpthrough.vsp),par_unit) {y+=col_jumpthrough.vsp}//This makes the player follow a verticalmoving platform

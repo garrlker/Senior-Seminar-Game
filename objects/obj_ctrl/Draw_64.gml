@@ -10,3 +10,5 @@ draw_text(0,96,"trin: "+string(obj_player.trin))
 draw_text(0,112,"trinfree: "+string(obj_player.trinfree))
 draw_text(0,128,"freemd: "+string(obj_player.freemd))
 draw_text(0,144,"spr_dir: "+string(obj_player.spr_dir))
+draw_text(0,160,"Colliding: "+string(obj_player.colliding_with_wall))
+

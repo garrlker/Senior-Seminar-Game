@@ -7,3 +7,5 @@ trin=999
 trinfree=true
 freemd=true
 spr_dir=1
+can_wall_jump = false
+colliding_with_wall = false;
