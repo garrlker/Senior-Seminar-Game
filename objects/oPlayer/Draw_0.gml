@@ -58,8 +58,11 @@ if (!attacking) {
 }
 
 // Draw player
-if (onGround)
+if (onGround){
+	draw_sprite_ext(sprite_index, image_index, x + 4, y + (16 - 16 * yscale) * 0.25 + 4, facing * xscale, yscale, 0, c_black, 0.5);
     draw_sprite_ext(sprite_index, image_index, x, y + (16 - 16 * yscale) * 0.25, facing * xscale, yscale, 0, c_white, image_alpha);    
-else
+}
+else{
+	draw_sprite_ext(sprite_index, image_index, x + 4, y + 4, facing * xscale, yscale, 0, c_black, 0.5);
     draw_sprite_ext(sprite_index, image_index, x, y, facing * xscale, yscale, 0, c_white, image_alpha);
-
+}

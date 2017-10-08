@@ -1,8 +1,8 @@
 {
-    "id": "81e9252c-af35-409d-a9ea-cb3d5ae87da1",
+    "id": "22c3e41f-713b-4979-b126-8ad81d6feafd",
     "modelName": "GMSound",
     "mvc": "1.0",
-    "name": "snd_jump",
+    "name": "snd_oldfire",
     "audioGroupGuid": "7b2c4976-1e09-44e5-8256-c527145e03bb",
     "bitDepth": 1,
     "bitRate": 128,
