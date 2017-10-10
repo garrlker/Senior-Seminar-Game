@@ -26,4 +26,4 @@ with(obj_newflame){
 	}
 }
 
-camera_set_view_pos(oGame.cam,camera_get_view_x(oGame.cam),camera_get_view_y(oGame.cam) - 2880);
+//camera_set_view_pos(oGame.cam,camera_get_view_x(oGame.cam),camera_get_view_y(oGame.cam) - 2880);

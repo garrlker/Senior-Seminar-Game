@@ -127,23 +127,30 @@ if (kJump && cLeft && !onGround) {
     yscale = 1.33;
     xscale = 0.67;
             
+	for (var j = 0; j < 4; ++j) {
+		instance_create(x + random_range(0, 8), y + 8 + random_range(-2, 2), oParticlePlayer);
+	}
     if (kLeft) {
         vy = -jumpHeight * 1.2;
         vx =  jumpHeight * .66;
+		
     } else {
         vy = -jumpHeight * 1.1;
         vx =  vxMax; 
-    }  
+	}  
 }
 
 if (kJump && cRight && !onGround) {
     yscale = 1.33;
     xscale = 0.67;
-    
+	
+	for (var j = 0; j < 4; ++j) {
+		instance_create(x + random_range(-8, 0), y + 8 + random_range(-2, 2), oParticlePlayer);
+	}
     if (kRight) {
         vy = -jumpHeight * 1.2;
         vx = -jumpHeight * .66;
-    } else {
+	} else {
         vy = -jumpHeight * 1.1;
         vx = -vxMax;
     }  
@@ -254,7 +261,7 @@ if (!kBlock && kAction) {
 		atk.direction = point_direction(0,0,gamepad_axis_value(0, gp_axislh),gamepad_axis_value(0, gp_axislv));
 	}*/
 }
-
+/*
 if(gamepad_button_check(0, gp_face3) and (abs(gamepad_axis_value(0, gp_axislh)) > 0.15 or abs(gamepad_axis_value(0, gp_axislv)) > 0.15)){
 	if(!audio_is_playing(snd_fire)){
 		audio_play_sound(snd_fire,1,false)
@@ -271,7 +278,7 @@ if(mouse_check_button(mb_left)){
 		atk.speed = 7;
 		atk.direction = point_direction(x,y,mouse_x,mouse_y) + random(10) - random(10);
 	}
-}
+}*/
 
 blocking = kBlock;
 
