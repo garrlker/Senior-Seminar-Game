@@ -261,7 +261,7 @@ if (!kBlock && kAction) {
 		atk.direction = point_direction(0,0,gamepad_axis_value(0, gp_axislh),gamepad_axis_value(0, gp_axislv));
 	}*/
 }
-/*
+
 if(gamepad_button_check(0, gp_face3) and (abs(gamepad_axis_value(0, gp_axislh)) > 0.15 or abs(gamepad_axis_value(0, gp_axislv)) > 0.15)){
 	if(!audio_is_playing(snd_fire)){
 		audio_play_sound(snd_fire,1,false)
@@ -271,7 +271,7 @@ if(gamepad_button_check(0, gp_face3) and (abs(gamepad_axis_value(0, gp_axislh)) 
 		atk.speed = 7;
 		atk.direction = point_direction(0,0,gamepad_axis_value(0, gp_axislh),gamepad_axis_value(0, gp_axislv)) + random(10) - random(10);
 	}
-}
+}/*
 if(mouse_check_button(mb_left)){
 	repeat(5){
 		var atk = instance_create(x,y,obj_newflame);
