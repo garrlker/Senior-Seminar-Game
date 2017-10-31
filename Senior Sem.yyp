@@ -207,6 +207,14 @@
             }
         },
         {
+            "Key": "181686d4-9adc-47d2-a4f2-2885016bf834",
+            "Value": {
+                "id": "2f5b547f-adc7-438e-9a86-ee06a066aabc",
+                "resourcePath": "sprites\\sprite70\\sprite70.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "1863717e-0b40-4ba3-a2c4-d4f209b30b18",
             "Value": {
                 "id": "a2dde79d-c4fc-4a28-9523-940ded3c1d15",
@@ -252,6 +260,14 @@
                 "id": "faaf6c1c-379a-456f-9df2-7dbf612f7bd7",
                 "resourcePath": "sounds\\snd_oldfire\\snd_oldfire.yy",
                 "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "23d05ca5-5847-4e89-b19b-ea50137e95f1",
+            "Value": {
+                "id": "06b1bc32-c464-454e-88ea-1f1bc9134d43",
+                "resourcePath": "fonts\\fnt_startGame\\fnt_startGame.yy",
+                "resourceType": "GMFont"
             }
         },
         {
@@ -439,6 +455,14 @@
             }
         },
         {
+            "Key": "466b5103-99a3-456d-9668-1c14ded5556c",
+            "Value": {
+                "id": "cb5467fa-d213-4072-a745-292f0570e612",
+                "resourcePath": "sprites\\spr_logo\\spr_logo.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "47eb26f9-33b7-4c2c-8623-96c42412348b",
             "Value": {
                 "id": "f8e331e6-4920-4d90-ad9e-bcbe64577a01",
@@ -563,6 +587,14 @@
             "Value": {
                 "id": "8fdaf384-fb51-4142-9985-183d6f38dddc",
                 "resourcePath": "objects\\oBlockIce\\oBlockIce.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "5e17b451-7008-4c15-b6ff-2de642a75a6d",
+            "Value": {
+                "id": "3120a203-6d25-458e-a628-0828ba419a5e",
+                "resourcePath": "objects\\obj_logo\\obj_logo.yy",
                 "resourceType": "GMObject"
             }
         },

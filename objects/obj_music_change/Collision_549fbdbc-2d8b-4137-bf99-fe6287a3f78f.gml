@@ -6,3 +6,6 @@ with(obj_music_player){
 with(obj_music_change){
 	instance_destroy()
 }
+with(obj_logo){
+	fade = true;
+}
