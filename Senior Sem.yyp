@@ -87,6 +87,14 @@
             }
         },
         {
+            "Key": "072794fd-ac1f-4528-bd06-b613a9042fa5",
+            "Value": {
+                "id": "c4ac12e1-2720-4ca0-8236-cf017c85e3e3",
+                "resourcePath": "sprites\\spr_batAttack\\spr_batAttack.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "079000d8-d937-42de-9d3f-632b11541484",
             "Value": {
                 "id": "20b46976-bcb5-4d15-8ea0-6f32fa90feaa",
@@ -228,6 +236,14 @@
                 "id": "0bc125da-926f-4654-881f-749f287d926d",
                 "resourcePath": "objects\\obj_generate\\obj_generate.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "190e607e-15ad-4bda-a750-15a162fe47c9",
+            "Value": {
+                "id": "91d70576-6a99-45a5-a6e7-8030fdcb2eff",
+                "resourcePath": "sprites\\spr_batRight\\spr_batRight.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -559,6 +575,14 @@
             }
         },
         {
+            "Key": "58373d2c-08a8-49f5-8dc6-735c4b551fc1",
+            "Value": {
+                "id": "eace73f8-e47a-446d-93d1-2f11aef19a79",
+                "resourcePath": "scripts\\ProjectShadow\\ProjectShadow.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "590ac51b-cab3-4cae-9128-6024dbcc5bc0",
             "Value": {
                 "id": "987ea0f0-e3e5-4c73-b5de-19ba16f04967",
@@ -612,6 +636,14 @@
                 "id": "f2a82511-9900-4e13-a0e7-3eaddba810f0",
                 "resourcePath": "sprites\\sAtkButton\\sAtkButton.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "5f65b5ef-cbd5-42fb-8f8a-606472226704",
+            "Value": {
+                "id": "69c17f18-a5c6-4063-a43e-b57ec8061a99",
+                "resourcePath": "objects\\obj_lighting\\obj_lighting.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -767,6 +799,14 @@
             }
         },
         {
+            "Key": "79d4fe67-b9f5-4337-8ffb-e9679139eb83",
+            "Value": {
+                "id": "7285637c-3da2-4361-8e93-100455b7e306",
+                "resourcePath": "sprites\\spr_batLeft\\spr_batLeft.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "7b4e1ce5-e94d-4862-b4ad-cdd949b084ea",
             "Value": {
                 "id": "d9f48964-ccc9-4078-9a49-2ad7dbfae64f",
@@ -868,6 +908,14 @@
                 "id": "0790e275-b8d7-4ead-8f90-dabfa448abcc",
                 "resourcePath": "views\\87c6b4eb-8845-47fa-a018-836959ca7158.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "890a9466-4e35-48ef-951a-87b9693db569",
+            "Value": {
+                "id": "09c0a937-364b-41bb-b5f5-9c7a17d605f1",
+                "resourcePath": "scripts\\SignTest\\SignTest.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -1479,6 +1527,14 @@
             }
         },
         {
+            "Key": "e4d27076-5a6d-4d50-86c3-26dcf1fd065c",
+            "Value": {
+                "id": "1dd61352-7019-4c45-b670-88dad3e8991b",
+                "resourcePath": "objects\\obj_bat\\obj_bat.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "eaf2799b-b17f-4aa9-9174-ad8eb6ac0cf4",
             "Value": {
                 "id": "1869b7a3-943f-4371-ba90-a3ed400ad8f1",
@@ -1621,7 +1677,9 @@
         "bc46f2e0-6a23-4bb0-8a58-30dc35ed5f9f",
         "c52e0460-8670-4857-9af5-e5419f49537a",
         "6b14c0d1-bd43-4017-8c4d-5750a7f84958",
-        "309b89a1-f53c-4322-b073-5623cf7b7fe8"
+        "309b89a1-f53c-4322-b073-5623cf7b7fe8",
+        "58373d2c-08a8-49f5-8dc6-735c4b551fc1",
+        "890a9466-4e35-48ef-951a-87b9693db569"
     ],
     "tutorial": ""
 }

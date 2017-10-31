@@ -10,8 +10,11 @@ with(oBlock){
 		instance_destroy()
 	}
 }
-with(obj_darkPlayer){
+with(oParEnemy){
 	y -= 2880
+	if(y < 0){
+		instance_destroy()
+	}
 }
 with(oBlockBoundary){
 	y -= 2880
