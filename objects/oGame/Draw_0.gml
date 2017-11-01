@@ -13,5 +13,5 @@ draw_text(xx,yy + 16,camera_get_view_x(cam));
 draw_text(xx,yy + 32,camera_get_view_y(cam));
 draw_text(xx,yy + 48,"FPS: "+string(fps));
 draw_text(xx,yy + 64,"FPS Real: "+string(fps_real));
-draw_text(xx + 580,yy + 16,"Depth: "+string(obj_depth_tracker.depth_score))
+//draw_text(xx + 580,yy + 16,"Depth: "+string(obj_depth_tracker.depth_score))
 show_debug_overlay(true)
