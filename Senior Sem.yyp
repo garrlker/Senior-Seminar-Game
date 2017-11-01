@@ -1119,6 +1119,14 @@
             }
         },
         {
+            "Key": "a066d065-861b-4533-b14d-d7608c85998a",
+            "Value": {
+                "id": "08212a26-825f-4fbd-8ca9-603586ab1234",
+                "resourcePath": "shaders\\shader0\\shader0.yy",
+                "resourceType": "GMShader"
+            }
+        },
+        {
             "Key": "a153741f-296f-4f05-b31d-9acc4b771d73",
             "Value": {
                 "id": "70e3be0b-15cc-4af3-8352-cc7be667cd18",
