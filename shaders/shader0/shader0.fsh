@@ -28,7 +28,7 @@ if( dist< u_fLightPositionRadius.z ){
     gl_FragColor = mix( gl_FragColor, vec4(0.0,0.0,0.0,0.7), falloff);          
 }else{
     // outside the radius - totally in shadow
-    //gl_FragColor = vec4(0.0, 0.0, 0.0, 0.7);
+    gl_FragColor = vec4(0.0, 0.0, 0.0, 0.7);
 }
 	gl_FragColor.a *= .7;
 }

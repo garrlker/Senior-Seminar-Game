@@ -14,7 +14,7 @@ starty = floor((ly-rad)/tile_size);
 endy = floor((ly+rad)/tile_size);
 var draw = false
 surface_set_target(global.surf);
-//draw_clear_alpha(0,0);
+draw_clear_alpha(0,0);
 
 vertex_begin(VBuffer, VertexFormat);
 for(var yy=starty;yy<=endy;yy++)
