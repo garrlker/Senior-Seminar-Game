@@ -266,7 +266,7 @@ if(gamepad_button_check(0, gp_face3) and (abs(gamepad_axis_value(0, gp_axislh)) 
 	if(!audio_is_playing(snd_fire)){
 		audio_play_sound(snd_fire,1,false)
 	}
-	repeat(5){
+	repeat(1){
 		var atk = instance_create(x,y,obj_newflame);
 		atk.speed = 7;
 		atk.direction = point_direction(0,0,gamepad_axis_value(0, gp_axislh),gamepad_axis_value(0, gp_axislv)) + random(10) - random(10);

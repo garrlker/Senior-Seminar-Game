@@ -1,8 +1,9 @@
 /// @description Insert description here
 // You can write your code in this editor
-image_xscale *= 1.02
-image_yscale *= 1.02
 
-if(image_xscale > 3){
+ttl *= 1.02
+
+if(ttl > 3){
+	part_emitter_destroy(global.partsys_fire,my_emitter);
 	instance_destroy()
 }

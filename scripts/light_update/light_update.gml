@@ -18,7 +18,6 @@ with (oBlock) {
   a_test = point_direction(other.x, other.y, x, y);
   a_min = -1;
   a_max = -1;
-  
   for (i = 0; i < points; i++) {
     if (px[i] < minx)
       minx = px[i];
