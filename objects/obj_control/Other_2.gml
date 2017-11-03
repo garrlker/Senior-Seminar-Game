@@ -29,6 +29,6 @@ with (m) {
   // Update the light, so it's surface is drawn correctly
   light_update();
 }
-
-create_light(x,y,c_yellow,0.5,oPlayer)
+col = make_color_rgb(0,178,255);
+create_light(x,y,c_white,1,oPlayer)
 
