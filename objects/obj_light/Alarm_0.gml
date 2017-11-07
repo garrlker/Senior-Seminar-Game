@@ -9,3 +9,12 @@ if(obj!=0){
 		instance_destroy()
 	}
 }
+
+//Update
+if(fps_real > 120){
+	alarm[0] = 1;
+}else if(fps_real > 60){
+	alarm[0] = 2;
+}else{
+	alarm[0] = 4;
+}
