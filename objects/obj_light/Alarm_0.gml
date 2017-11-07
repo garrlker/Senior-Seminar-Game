@@ -9,6 +9,9 @@ if(obj!=0){
 		instance_destroy()
 	}
 }
+if(obj==instance_id_get(oPlayer)){
+	exit;
+}
 
 //Update
 if(fps_real > 120){

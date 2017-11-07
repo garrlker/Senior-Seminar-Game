@@ -4,19 +4,19 @@
 
 var kLeft, kRight, kUp, kDown, kJump, kJumpRelease, kAction, kBlock, kRollL, kRollR, tempAccel, tempFric;
 
-kLeft        = keyboard_check(vk_left)  || gamepad_axis_value(0, gp_axislh) < -0.4;
-kRight       = keyboard_check(vk_right) || gamepad_axis_value(0, gp_axislh) >  0.4;
-kUp          = keyboard_check(vk_up)    || gamepad_axis_value(0, gp_axislv) < -0.4;
-//kDown        = keyboard_check(vk_down)  || gamepad_axis_value(0, gp_axislv) >  0.4;	//Don't really care for this
+kLeft        = keyboard_check(ord("A"))				|| gamepad_axis_value(0, gp_axislh) < -0.4;
+kRight       = keyboard_check(ord("D"))				|| gamepad_axis_value(0, gp_axislh) >  0.4;
+kUp          = keyboard_check(ord("W"))				|| gamepad_axis_value(0, gp_axislv) < -0.4;
+//kDown        = keyboard_check(vk_down)			|| gamepad_axis_value(0, gp_axislv) >  0.4;	//Don't really care for this
 kDown = false;
 
-kJump        = keyboard_check_pressed(ord("Z"))  || gamepad_button_check_pressed(0, gp_face1);
-kJumpRelease = keyboard_check_released(ord("Z")) || gamepad_button_check_released(0, gp_face1);
+kJump        = keyboard_check_pressed(ord("W"))		|| gamepad_button_check_pressed(0, gp_face1);
+kJumpRelease = keyboard_check_released(ord("W"))	|| gamepad_button_check_released(0, gp_face1);
 
-kAction      = keyboard_check_pressed(ord("X"))  || gamepad_button_check_pressed(0, gp_face3);
-kBlock       = keyboard_check(ord("C"))          || gamepad_button_check(0, gp_face2);
-kRollL       = keyboard_check_pressed(ord("A"))  || gamepad_button_check_pressed(0, gp_shoulderlb);
-kRollR       = keyboard_check_pressed(ord("D"))  || gamepad_button_check_pressed(0, gp_shoulderrb);
+kAction      = mouse_check_button_pressed(mb_left)  || gamepad_button_check_pressed(0, gp_face3);
+kBlock       = mouse_check_button(mb_right)			|| gamepad_button_check(0, gp_face2);
+kRollL       = keyboard_check_pressed(ord("Q"))		|| gamepad_button_check_pressed(0, gp_shoulderlb);
+kRollR       = keyboard_check_pressed(ord("E"))		|| gamepad_button_check_pressed(0, gp_shoulderrb);
 
 if (instance_exists(oTouchCompatible)) {
     // Disable double-click (increases input accuracy)
@@ -277,8 +277,25 @@ if(gamepad_button_check_pressed(0, gp_face3) and (abs(gamepad_axis_value(0, gp_a
 			dir = 45 * d;
 		}
 		atk.direction = dir
-		create_light(x,y,c_red,.25,atk);
-}/*
+		create_light(atk.x,atk.y,c_red,.25,atk);
+}else if(mouse_check_button_pressed(mb_left)){
+	if(!audio_is_playing(snd_fire)){
+		audio_play_sound(snd_fire,1,false)
+	}
+		var atk = instance_create(x,y,obj_newflame);
+		var dir = point_direction(x,y,mouse_x,mouse_y);
+		var d = dir div 45;
+		var r = dir mod 45;
+		atk.speed = 7;
+		if(r > 22.5){
+			dir = 45 * (d + 1);
+		}else{
+			dir = 45 * d;
+		}
+		atk.direction = dir
+		create_light(atk.x,atk.y,c_red,.25,atk);
+}
+/*
 if(mouse_check_button(mb_left)){
 	repeat(5){
 		var atk = instance_create(x,y,obj_newflame);

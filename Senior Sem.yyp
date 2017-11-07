@@ -615,6 +615,14 @@
             }
         },
         {
+            "Key": "586a918f-f612-4f7a-95ae-e8081b6fac68",
+            "Value": {
+                "id": "a6a8d7c5-6eb2-4d54-9c0e-683d669b6577",
+                "resourcePath": "sprites\\spr_enemy\\spr_enemy.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "590ac51b-cab3-4cae-9128-6024dbcc5bc0",
             "Value": {
                 "id": "987ea0f0-e3e5-4c73-b5de-19ba16f04967",
@@ -876,6 +884,14 @@
                 "id": "aec26510-64f5-48fe-af47-69377c3e4071",
                 "resourcePath": "views\\784db68a-5402-46b2-824f-475ceb385d78.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "78dab158-b656-4393-8995-b16377ee154c",
+            "Value": {
+                "id": "61df6f17-c070-44ab-b375-fe18dac8ae9a",
+                "resourcePath": "objects\\obj_rock_enemy\\obj_rock_enemy.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -1263,6 +1279,14 @@
             }
         },
         {
+            "Key": "aaebc452-1050-4639-903f-5fc490fe73e8",
+            "Value": {
+                "id": "418242d5-3e0f-4ded-88ed-3a5d433de3f3",
+                "resourcePath": "objects\\obj_ice_enemy\\obj_ice_enemy.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "acbf45ea-9639-4772-b923-07e8720fc03e",
             "Value": {
                 "id": "c1356e62-87a3-4fd7-93b8-86dda1e91485",
@@ -1332,6 +1356,14 @@
                 "id": "e1d17bb2-d5ee-4052-bfcf-9fdbf935eee7",
                 "resourcePath": "views\\b6483027-93d2-4d97-810a-454e2b3898d7.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "b681b327-0be4-442f-9049-2da87e113498",
+            "Value": {
+                "id": "7d57348f-d36d-43b5-ba54-a834147f99b2",
+                "resourcePath": "sprites\\spr_ice_enemy\\spr_ice_enemy.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1523,6 +1555,14 @@
             "Value": {
                 "id": "1d6156ca-5b6c-4b18-9c9f-a8a9a19e43cc",
                 "resourcePath": "objects\\oPlayer\\oPlayer.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "cc189566-2c85-4ca5-b073-d16fda07818a",
+            "Value": {
+                "id": "b76f803e-76d1-4553-a398-ec75c85e8da6",
+                "resourcePath": "objects\\obj_torch\\obj_torch.yy",
                 "resourceType": "GMObject"
             }
         },

@@ -64,11 +64,12 @@ repeat(abs(vx)) {
 //HP
 if (hp<1){
 	//JSON DEPTH AND ENEMY KILLS TO LEADERBOARD
-	var url = "http://leaderboard.mcalister.me/score/?score="+string(obj_depth_tracker.depth_score)+"&player="+string("testPlayer");
+	var name = get_string("Name?", "");
+	var url = "http://leaderboard.mcalister.me/score/?score="+string(obj_depth_tracker.depth_score)+"&player="+string(name);
 	//var url2= "http://leaderboard.mcalister.me/score/?score="+string(obj_depth_tracker.depth_score)+"&player="+string("testPlayer");
 	http_get(url)
 	//show_message(url);
-	clipboard_set_text(url);
+	//clipboard_set_text(url);
 	game_restart();
 }
 

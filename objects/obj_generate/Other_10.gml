@@ -7,7 +7,13 @@ var xx = 0;
 //var yy = camera_get_view_y(oGame.cam) + 540;
 var yy = oPlayer.y + 360
 repeat(random(3)){
-	instance_create(72 + random(496),yy - 70,obj_bat)
+	instance_create(100 + random(370),yy - 100,obj_bat)
+}
+repeat(random(3)){
+	instance_create(100 + random(370),yy - 100,obj_rock_enemy)
+}
+repeat(random(2)){
+	instance_create(100 + random(370),yy - 100,obj_ice_enemy)
 }
 switch(mode){
 	case 0:
