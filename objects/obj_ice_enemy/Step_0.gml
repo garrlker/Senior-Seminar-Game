@@ -38,10 +38,14 @@ if(place_meeting(x,y+vsp,oParSolid)){
 		y = y + sign(vsp)
 	}
 	var wall = instance_place(x,y+vsp,oParSolid);
-	with(wall){
-		frozen = 1;
-		sprite_index = spr_platform_ice;
-		image_index = choose(1,2,3)
+	if(wall != noone){
+		with(wall){
+			frozen = 1;
+			sprite_index = spr_platform_ice;
+			image_index = choose(1,2,3);
+			//instance_change(oBlockIce,true);
+			//image_index = choose(1,2,3);
+		}
 	}
 	can_jump = 1;
 	vsp = 0;

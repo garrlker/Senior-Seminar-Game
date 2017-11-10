@@ -71,3 +71,5 @@ blocking  = false;
 //fallTime = 0;
 //fallMax  = 28;
 
+msg = 0;
+
